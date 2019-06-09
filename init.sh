@@ -65,3 +65,8 @@ echo "source~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$
 
 brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
