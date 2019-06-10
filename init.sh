@@ -61,7 +61,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/tools/zsh-autosuggestions
-echo "source~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 brew tap sambadevi/powerlevel9k
 brew install powerlevel9k
