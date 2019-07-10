@@ -33,15 +33,22 @@ alias e="expo start"
 alias ytdl="cd ~/documents/dragndrop && youtube-dl --extract-audio --audio-format mp3"
 alias gcm="git commit -m "
 alias gcma="git add . && git commit -m"
-alias rc="vim ~/.zshrc && source ~/.zshrc && echo 'sourced'"
-alias src="source ~/.zshrc"
 alias gc="git checkout"
+alias gp="git push"
+alias rc="vim ~/.zshrc && source ~/.zshrc && echo 'sourced'"
 
 #functions
 function nb() {
 	git checkout -b $1
 	git push --set-upstream origin $1
 }
+
+#function gcmap() {
+#	git add .
+#	echo $1
+#	git commit -m $1
+#	git push
+#}
 
 #export DJANGO_SETTINGS_MODULE=metoo.settings
 export PATH="/usr/local/opt/openssl/bin:$PATH"
