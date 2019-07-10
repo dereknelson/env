@@ -31,6 +31,17 @@ alias k=kubectl
 alias loclogs='docker-compose logs -f nginx | grep -e "GET /userlocation" -e "GET /geofence"'
 alias e="expo start"
 alias ytdl="cd ~/documents/dragndrop && youtube-dl --extract-audio --audio-format mp3"
+alias gcm="git commit -m "
+alias gcma="git add . && git commit -m"
+alias rc="vim ~/.zshrc && source ~/.zshrc && echo 'sourced'"
+alias src="source ~/.zshrc"
+alias gc="git checkout"
+
+#functions
+function nb() {
+	git checkout -b $1
+	git push --set-upstream origin $1
+}
 
 #export DJANGO_SETTINGS_MODULE=metoo.settings
 export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -52,3 +63,7 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 #eval "$(rbenv init -)"
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
