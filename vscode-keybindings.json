@@ -1,0 +1,41 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "cmd+j",
+		"command": "editor.action.joinLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "-editor.action.joinLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+`",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "shift+cmd+d",
+		"command": "-workbench.view.debug"
+	},
+	{
+		"key": "shift+alt+.",
+		"command": "-gitlens.diffWithWorking",
+		"when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
+	},
+	{
+		"key": "alt+cmd+g shift+.",
+		"command": "-gitlens.diffWithWorking",
+		"when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /revision/"
+    },
+    {
+        "key": "cmd+shift+right",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "cmd+shift+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+
+
+]
