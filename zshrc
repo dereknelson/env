@@ -5,7 +5,7 @@ source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/derek/.oh-my-zsh
+export ZSH=/Users/$(whoami)/.oh-my-zsh
 
 # zplug "zsh-users/zsh-syntax-highlighting", defer:2
 

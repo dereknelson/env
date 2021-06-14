@@ -1,0 +1,120 @@
+{
+	"git.enableSmartCommit": true,
+	"explorer.confirmDragAndDrop": false,
+	"git.enabled": true,
+	// "editor.fontFamily": "Avenir Next LT Pro, monospace",
+	"editor.fontFamily": "Lato",
+	"editor.fontSize": 16,
+	"editor.tokenColorCustomizations": {
+		"[One Dark Pro]": {
+			"textMateRules": [
+				{
+					"scope": "variable.other.constant",
+					"settings": {
+						"foreground": "#D19A66"
+					}
+				},
+				{
+					"name": "[VSCODE-CUSTOM] JS/TS Punctuation Separator Comma",
+					"scope": [
+						"source.ts punctuation.separator.comma",
+						"source.js punctuation.separator.comma",
+						"source.tsx punctuation.separator.comma"
+					],
+					"settings": {
+						"foreground": "#ABB2BF"
+					}
+				},
+				{
+					"scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+					"settings": {
+						"foreground": "#ABB2BF"
+					}
+				},
+				{
+					"scope": "variable.language",
+					"settings": {
+						"foreground": "#e06c75"
+					}
+				}
+			]
+		}
+	},
+	"workbench.colorTheme": "One Dark Pro",
+	"editor.letterSpacing": 0.75,
+	"search.exclude": {
+		"**/bower_components": true,
+		"**/helpers/lodash": true,
+		"**/node_modules": true,
+		"**/Pods": true
+	},
+	"javascript.implicitProjectConfig.experimentalDecorators": true,
+	"eslint.packageManager": "yarn",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"breadcrumbs.enabled": true,
+	"autoimport.filesToScan": "**/*.{ts,tsx,js}",
+	"javascript.preferences.importModuleSpecifier": "relative",
+	"[json]": {},
+	"eslint.alwaysShowStatus": true,
+	"files.exclude": {
+		"**/.pyc": true,
+		"**/AppEntry.bundle": true,
+		"**/shell-app.bundle": true
+	},
+	"terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.jsxBracketSameLine": true,
+	"prettier.semi": false,
+	"prettier.tabWidth": 4,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"sync.gist": "537b91f7771a27190329b918bfd7d418",
+	"editor.multiCursorModifier": "alt",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.lineNumbers": "relative",
+	"vim.sneak": true,
+	"vim.visualModeKeyBindings": [
+		{
+			"before": ["p"],
+			"after": ["p", "g", "v", "y"]
+		}
+	],
+	"turboConsoleLog.logMessagePrefix": "",
+	"turboConsoleLog.quote": "'",
+	"turboConsoleLog.insertEnclosingClass": false,
+	"editor.autoClosingQuotes": "always",
+	"editor.autoClosingBrackets": "always",
+	"gitlens.blame.ignoreWhitespace": true,
+	"git.autofetch": true,
+	"files.associations": {
+		"*.jsx": "javascript"
+	},
+	"typescript.format.enable": false,
+	"editor.lineHeight": 22,
+	"typescript.tsserver.log": "verbose",
+	"typescript.tsserver.trace": "messages",
+	"liveshare.featureSet": "insiders",
+	"editor.minimap.enabled": false,
+	"workbench.editor.enablePreview": false,
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
+	"editor.cursorStyle": "line",
+	"editor.insertSpaces": false,
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off",
+	"window.zoomLevel": -1,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": ["j"],
+			"after": ["g", "j"]
+		},
+		{
+			"before": ["k"],
+			"after": ["g", "k"]
+		}
+	]
+}
