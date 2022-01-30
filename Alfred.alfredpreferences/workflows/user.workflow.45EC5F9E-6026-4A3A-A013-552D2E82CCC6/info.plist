@@ -5,7 +5,21 @@
 	<key>bundleid</key>
 	<string></string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F78317A-2656-4DD6-863F-D66E98EFAA8E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>dereknelson</string>
 	<key>description</key>
@@ -79,9 +93,9 @@
 		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>85</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>170</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
