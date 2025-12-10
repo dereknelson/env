@@ -6,11 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>DCB0E4FA-2610-43F5-8339-D56FE8895349</key>
+		<key>8984229C-014E-485C-AA35-62627E19E95B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>354AA5BF-322B-45FA-BEFB-13F79C846CE2</string>
+				<string>4D9B0B65-CE6D-49E1-B0BB-A6B5FFF72841</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -27,9 +27,26 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>focus notes</string>
+	<string>focus notion</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Notion.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>4D9B0B65-CE6D-49E1-B0BB-A6B5FFF72841</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -57,48 +74,31 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>DCB0E4FA-2610-43F5-8339-D56FE8895349</string>
+			<string>8984229C-014E-485C-AA35-62627E19E95B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Applications/Notes.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>354AA5BF-322B-45FA-BEFB-13F79C846CE2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>354AA5BF-322B-45FA-BEFB-13F79C846CE2</key>
+		<key>4D9B0B65-CE6D-49E1-B0BB-A6B5FFF72841</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>305</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>135</integer>
 		</dict>
-		<key>DCB0E4FA-2610-43F5-8339-D56FE8895349</key>
+		<key>8984229C-014E-485C-AA35-62627E19E95B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>130</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>145</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>dereknelson.dev</string>
 </dict>
 </plist>

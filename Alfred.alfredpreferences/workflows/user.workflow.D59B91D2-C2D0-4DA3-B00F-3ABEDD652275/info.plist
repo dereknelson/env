@@ -6,11 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
+		<key>91B29005-A689-47CE-984F-ACDDA2115F60</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4F78317A-2656-4DD6-863F-D66E98EFAA8E</string>
+				<string>99771916-3C8C-4CEE-ADF9-F162EAE1F222</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,11 +23,11 @@
 	<key>createdby</key>
 	<string>dereknelson</string>
 	<key>description</key>
-	<string></string>
+	<string>focus tradingview</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>focus linear</string>
+	<string>focus tradingview</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -42,11 +42,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>5</integer>
+				<integer>13</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>G</string>
+				<string>W</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -57,7 +57,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>87B629C0-6C43-4E9D-820A-EC166C90EE8E</string>
+			<string>91B29005-A689-47CE-984F-ACDDA2115F60</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -66,7 +66,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Linear.app</string>
+					<string>/Applications/TradingView.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -74,7 +74,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>4F78317A-2656-4DD6-863F-D66E98EFAA8E</string>
+			<string>99771916-3C8C-4CEE-ADF9-F162EAE1F222</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -83,19 +83,19 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>4F78317A-2656-4DD6-863F-D66E98EFAA8E</key>
+		<key>91B29005-A689-47CE-984F-ACDDA2115F60</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<integer>125</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>220</integer>
 		</dict>
-		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
+		<key>99771916-3C8C-4CEE-ADF9-F162EAE1F222</key>
 		<dict>
 			<key>xpos</key>
-			<integer>85</integer>
+			<integer>295</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>220</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

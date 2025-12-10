@@ -6,11 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
+		<key>8984229C-014E-485C-AA35-62627E19E95B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4F78317A-2656-4DD6-863F-D66E98EFAA8E</string>
+				<string>D29CED68-C3A0-454E-89D0-CF8024CBAF4C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>focus linear</string>
+	<string>focus docker</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -42,11 +42,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>5</integer>
+				<integer>38</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>G</string>
+				<string>J</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -57,7 +57,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>87B629C0-6C43-4E9D-820A-EC166C90EE8E</string>
+			<string>8984229C-014E-485C-AA35-62627E19E95B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -66,7 +66,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Linear.app</string>
+					<string>/Applications/Docker.app/Contents/MacOS/Docker Desktop.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -74,7 +74,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>4F78317A-2656-4DD6-863F-D66E98EFAA8E</string>
+			<string>D29CED68-C3A0-454E-89D0-CF8024CBAF4C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -83,22 +83,22 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>4F78317A-2656-4DD6-863F-D66E98EFAA8E</key>
+		<key>8984229C-014E-485C-AA35-62627E19E95B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>265</integer>
+			<integer>130</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>145</integer>
 		</dict>
-		<key>87B629C0-6C43-4E9D-820A-EC166C90EE8E</key>
+		<key>D29CED68-C3A0-454E-89D0-CF8024CBAF4C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>85</integer>
+			<integer>320</integer>
 			<key>ypos</key>
-			<integer>170</integer>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>dereknelson.dev</string>
 </dict>
 </plist>

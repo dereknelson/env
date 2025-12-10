@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E07EBCC6-01DC-4681-978E-D173E51C7403</string>
+				<string>B22C98CF-1D66-495C-89C5-36BD13521F5B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -33,6 +33,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Flipper.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>B22C98CF-1D66-495C-89C5-36BD13521F5B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -42,11 +59,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>6</integer>
+				<integer>48</integer>
 				<key>hotmod</key>
 				<integer>1310720</integer>
 				<key>hotstring</key>
-				<string>Z</string>
+				<string>⇥</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -61,23 +78,6 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Flipper.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>E07EBCC6-01DC-4681-978E-D173E51C7403</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -90,12 +90,12 @@
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
-		<key>E07EBCC6-01DC-4681-978E-D173E51C7403</key>
+		<key>B22C98CF-1D66-495C-89C5-36BD13521F5B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>135</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
