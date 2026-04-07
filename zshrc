@@ -118,33 +118,13 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 #export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 source ~/tools/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
-export NVM_DIR=~/.nvm
+export NVM_DIR="$HOME/.nvm"
 
-# Lazy-load NVM (saves ~300-500ms on shell startup)
-lazy_load_nvm() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-}
-
-nvm() {
-  lazy_load_nvm
-  nvm "$@"
-}
-
-node() {
-  lazy_load_nvm
-  node "$@"
-}
-
-npm() {
-  lazy_load_nvm
-  npm "$@"
-}
-
-npx() {
-  lazy_load_nvm
-  npx "$@"
-}
+# Make nvm available in every interactive shell without auto-switching versions.
+# `--no-use` keeps startup predictable; `nvm use` still works when you want it.
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  source "$NVM_DIR/nvm.sh" --no-use
+fi
 
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/10/bin/psql
@@ -205,3 +185,25 @@ export PATH="$HOME/bin:$PATH"
 
 # Load secrets from secure file (not tracked in dotfiles)
 [ -f ~/.env.secrets ] && source ~/.env.secrets
+
+# Put the nvm default Node's global bin dir on PATH.
+# Why: npm global CLIs like `codex` live inside the active Node version directory, so
+# shells need the default version's `bin/` on PATH to survive restarts. This follows
+# `nvm alias default ...` instead of guessing based on the newest installed version.
+if command -v nvm >/dev/null 2>&1; then
+  nvm_default_version=$(nvm version default 2>/dev/null)
+  if [[ -n "$nvm_default_version" && "$nvm_default_version" != "N/A" ]]; then
+    nvm_default_bin="$NVM_DIR/versions/node/$nvm_default_version/bin"
+    if [[ -d "$nvm_default_bin" ]]; then
+      export PATH="$nvm_default_bin:$PATH"
+    fi
+  fi
+fi
+
+# Run Codex in inline mode by default.
+# Why: Codex uses alternate-screen mode by default, which repaints the terminal UI and can
+# make earlier plan/context output effectively disappear from normal scrollback. `--no-alt-screen`
+# keeps Codex in the main terminal buffer so iTerm scrollback preserves that context.
+codex() {
+  command codex --no-alt-screen "$@"
+}
