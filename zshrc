@@ -67,7 +67,22 @@ alias e="npx expo start"
 alias ytdl="cd ~/documents/dragndrop && youtube-dl --extract-audio --audio-format mp3"
 alias gcm="git commit -m "
 alias gcma="git add . && git commit -m"
-alias gc="git checkout"
+unalias gc 2>/dev/null
+gc() {
+  if [[ $# -eq 1 && "$1" != -* ]]; then
+    local wt here
+    wt=$(git worktree list --porcelain 2>/dev/null | awk -v b="refs/heads/$1" '
+      /^worktree / { p=$2 }
+      $0 == "branch " b { print p; exit }
+    ')
+    here=$(git rev-parse --show-toplevel 2>/dev/null)
+    if [[ -n "$wt" && "$wt" != "$here" ]]; then
+      echo "→ $wt"
+      cd "$wt" && return
+    fi
+  fi
+  git checkout "$@"
+}
 alias gp="git push"
 alias rc="vim ~/.zshrc && source ~/.zshrc && echo 'sourced'"
 alias cherry="git cherry-pick"
